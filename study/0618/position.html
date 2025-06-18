@@ -6,45 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
+        /* 모든 박스에 공통 적용되는 스타일 */
         .box {
             width: 100px;
             height: 100px;
+            /* 기본 배경색 */
             background-color: blue;
             /* margin: 4px; */
         }
-
+        /* box1: static(기본값) -> 위치 이동(top/left) 무시됨 */
         .box1 {
             background-color: red;
             /* float: left;
             width: 20px; */
             top: 10px;
             left: 10px;
+            /* 기본 위치, 흐름에 따라 배치됨 */
             position: static;
         }
-
+        /* box2: absolute -> 자기 자리 기준으로 top/left만큼 이동 */
         .box2 {
             background-color: green;
             position: relative;
             top: 10px;
             left: 10px
         }
-
+        /* box3: absolute -> 가장 가까운 position 있는 조상 기준으로 위치 */
         .box3 {
             background-color: blue;
             position: absolute;
             top: 20px;
             left: 20px;
         }
-
+        /* box4: fixed -> 화면(브라우저 창) 기준으로 위치, 스크롤해도 고정 */
         .box4 {
             background-color: yellow;
             position: fixed;
             top: 30px;
             left: 30px;
         }
-
+        /* 박스들을 감싸는 컨테이너 */
         .container {
             background-color: lightgray;
+            /* 기본 position: static -> absolute 박스 기준이 되지 않음 */
             
         }
     </style>
@@ -67,5 +71,11 @@
         <div class="box"></div>
     </div>
 </body>
-
 </html>
+
+| 속성         | 기준                    | 위치 이동 가능? | 흐름 유지 여부 | 특징                           |
+| ---------- | --------------------- | --------- | -------- | ---------------------------- |
+| `static`   | 기본                    | ❌ 무시됨     | ✅ 흐름 유지  | 기본 위치 (top/left 무시)          |
+| `relative` | 자기 자신                 | ✅ 가능      | ✅ 흐름 유지  | 자기 자리 기준으로 이동                |
+| `absolute` | 가장 가까운 position 지정 조상 | ✅ 가능      | ❌ 흐름 제거  | `relative`나 `absolute` 부모 기준 |
+| `fixed`    | 브라우저 창                | ✅ 가능      | ❌ 흐름 제거  | 스크롤해도 화면에 고정                 |

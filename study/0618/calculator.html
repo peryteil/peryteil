@@ -6,38 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>계산기</title>
     <style>
+        /* 계산기 화면 (숫자 표시 영역) */
         .display{
+            /* 배경색 검정 */
             background: black;
+            /* 글자색 흰색 */
             color: white;
+            /* 안쪽 여백 */
             padding: 16px;
+            /* 글자 크기 큼 */
             font-size: 32px;
+            /* 오른쪽 정렬(계산기처럼) */
             text-align: right;
         }
-
+        /* 버튼 스타일 공통 */
         button {
+            /* 버튼 너비 고정 */
             width: 60px;
+            /* 버튼 사이 간격 */
             margin: 4px;
         }
-
+        /* 계산기 전체 박스 */
         .calculator {
+            /* 가운데 정렬 */
             margin: auto;
+            /* 전체 너비 */
             width: 285px;
+            /* 그림자 효과 */
             box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 02);
+            /* 안쪽 여백 */
             padding: 16px;
+            /* 모서리 둥글게 */
             border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
+    <!-- 계산기 전체를 감싸는 박스 -->
     <div class="calculator">
+        <!-- 숫자 및 결과 출력 창 -->
         <div class="display">0</div>
+        <!-- 계산기 버튼들 -->
         <div class="buttons">
+            <!-- 제어 버튼 -->
             <button>C</button>
             <button>←</button>
             <button>%</button>
             <button>/</button>
-
+            <!-- 숫자 및 연산 버튼 -->
             <button>7</button>
             <button>8</button>
             <button>9</button>
@@ -52,7 +69,7 @@
             <button>2</button>
             <button>3</button>
             <button>+</button>
-
+            <!-- 0, 소수점, = -->
             <button>0</button>
             <button>.</button>
             <button>=</button>

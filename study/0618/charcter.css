@@ -1,87 +1,120 @@
+/* 전체 배경 및 중앙 정렬 설정 */
 body {
+    /* 연한 노란 배경 */
     background-color: #fffbe6;
+    /* flex로 중앙 정렬 */
     display: flex;
+    /* 수평 가운데 */
     justify-content: center;
+    /* 수직 가운데 */
     align-items: center;
+    /* 화면 전체 높이 */
     height: 100vh;
 }
-
+/* 고양이 전체를 감싸는 컨테이너 */
 .cat {
+    /* 자식 위치 기준점 */
     position: relative;
+    /* 고양이 전체 너비 */
     width: 200px;
+    /* 고양이 전체 높이 */
     height: 200px;
 }
-
+/* 고양이 얼굴 */
 .face {
     width: 100%;
     height: 100%;
+    /* 연한 분홍색 얼굴 */
     background-color: #f9c4d2;
+    /* 완전한원 */
     border-radius: 50%;
     position: relative;
+    /* 귀보다 위에 놓임 */
     z-index: 1;
+    /* 부드러운 그림자 */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+/* 고양이 귀 공통 스타일 */
 .ear {
     width: 60px;
     height: 60px;
+    /* 얼굴과 같은 색 */
     background-color: #f9c4d2;
     position:absolute;
+    /* 얼굴보다 위로 올라오게 */
     top: -30px;
+    /* 위쪽이 둥근 반원 모양 */
     border-radius: 50% 50% 0 0; 
+    /* 얼굴 뒤에 숨김 */
     z-index: 0;
 }
-
+/* 왼쪽 귀 */
 .ear.left {
     left: 0;
+    /* 왼쪽으로 기울이기 */
     transform: rotate(-45deg);
 }
-
+/* 오른쪽 귀 */
 .ear.right {
     right: 0;
+    /* 오른쪾으로 기울이기 */
     transform: rotate(45deg);
 }
-
+/* 고양이 눈 공통 스타일 */
 .eye {
     width: 20px;
     height: 20px;
+    /* 검은 눈동자 */
     background-color: #000;
+    /* 동그란 눈 */
     border-radius: 50%;
     position: absolute;
+    /* 얼굴 위쪽 위치 */
     top: 60px;
 }
 
 .eye.left {
+    /* 왼쪽 기준 위치 */
     left: 50px;
 }
 
 .eye.right {
+    /* 오른쪽 기준 위치 */
     right: 50px;
 }
 
 .nose {
     width: 16px;
     height: 16px;
+    /* 진한 분홍색 */
     background-color: #d46a6a;
     position: absolute;
+    /* 얼굴 가운데 아래쪽 */
     top: 100px;
+    /* 가로 정중앙 기준 */
     left: 50%;
+    /* 수평 가운데 정렬 */
     transform: translateX(-50%);
+    /* 동그란 코 */
     border-radius: 50%;
 }
-
+/* 수염 공통 스타일 */
 .whisker {
     width: 60px;
     height: 2px;
+    /* 짙은 회색 수염 */
     background-color: #555;
     position: absolute;
+    /* 코 바로 옆 */
     top: 105px;
 }
-
+/* 왼쪽 수염 */
 .whisker.left {
+    /* 얼굴보다 왼쪽으로 돌출 */
     left: -40px;
 }
-
+/* 오른쪽 수염 */
 .whisker.right {
+    /* 얼굴보다 오른쪽으로 돌출 */
     right: -40px;
 }

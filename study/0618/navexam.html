@@ -5,42 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 탭 UI</title>
     <style>
+        /* 페이지 전체 스타일 */
       body {
+        /* 기본 글꼴 */
         font-family: "Segoe UI", sans-serif;
         padding: 40px;
+        /* 연한 회색 배경 */
         background-color: #f7f7f7;
       }
-
+      /* 탭 전체 감싸는 컨테이너 */
       .tab-container {
+        /* 최대 너비 */
         max-width: 500px;
+        /* 가운데 정렬 */
         margin: auto;
       }
-
+      /* 라디오 버튼은 화면에서 안 보이게 숨김 */
       input[type="radio"] {
         display: none;
       }
-
+      /* 탭 버튼(라벨) 기본 스타일 */
       label {
         display: inline-block;
         padding: 12px 20px;
         background-color: #ddd;
         margin-right: 5px;
         cursor: pointer;
+        /* 위쪽 둥글게 */
         border-radius: 8px 8px 0 0;
+        /* 배경색 부드럽게 전환 */
         transition: background 0.3s;
       }
-
+      /* 선택된 탭의 라벨 스타일 */
       input[type="radio"]:checked + label {
+        /* 초록색 배경 */
         background-color: #4caf50;
+        /* 글자색 흰색 */
         color: white;
       }
-
+      /* 탭 안의 콘텐츠 기본 상태: 숨김 */
       .content {
         display: none;
         background-color: white;
         padding: 20px;
+        /* 아래 둥글게 */
         border-radius: 0 8px 8px 8px;
+        /* 그림자 */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* 탭 라벨과 겹치는 느낌 연출 */
         margin-top: -5px;
       }
 
