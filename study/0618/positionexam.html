@@ -1,0 +1,114 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오 갤러리</title>
+    <style>
+        /* 전체 배경과 기본 글과 글꼴 설정 */
+      body {
+        /* 글꼴 지정 */
+        font-family: "Segoe UI", sans-serif;
+        /* 배경 밝은 회색 */
+        background-color: #f9f9f9;
+        /* 바깥 여백 */
+        padding: 40px;
+      }
+      /* 갤러리 전체 영역 - 그리드로 배치 */
+      .gallery {
+        /* CSS Grid 사용 */
+        display: grid;
+        /* 열의 개수는 자동으로 맞추되, 최소 280px, 최대 가용 너비 */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        /* 각 카드 사이 여백 */
+        gap: 20px;
+      }
+
+      .card {
+        /* .overlay가 기준으로 삼을 수 있도록 설정 */
+        position: relative;
+        /* 넘치는 부분 숨김 (overlay 슬라이드 효과용) */
+        overflow: hidden;
+        /* 카드 모서리를 둥글게 만듦 */
+        border-radius: 10px;
+        /* 약한 그림자 효과로 입체감 부여 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      /* 카드 안의 이미지 */
+      .card img {
+        /* 카드 너비에 맞춤 */
+        width: 100%;
+        /* 비율 유지 */
+        height: auto;
+        /* 이미지 아래 여백 제거 */
+        display: block;
+        /* 확대 애니메이션 */
+        transition: transform 0.3s ease;
+      }
+      /* 마우스를 올리면 이미지 약간 확대 */
+      .card:hover img {
+        /* 5% 확대 */
+        transform: scale(1.05);
+      }
+      /* 오버레이 영역 - 설명 텍스트 */
+      .overlay {
+        /* 부모(.card)를 기준으로 절대 위치 지정 */
+        position: absolute; 
+        /* 아래쪽에 붙이기 */
+        bottom: 0;
+        /* 왼쪽 끝에 붙이기 */
+        left: 0;
+        /* 오른쪽 끝에도 붙이기 (전체 너비 차지) */
+        right: 0;
+        /* 반투명한 검정 배경 */
+        background: rgba(0, 0, 0, 0.6);
+        /* 글자색 흰색 */
+        color: white;
+        /* 안쪽 여백 */
+        padding: 20px;
+        /* 아래로 100% 밀어서 처음엔 안 보이게 */
+        transform: translateY(100%);
+        /* 부드럽게 올라오는 애니메이션 */
+        transition: transform 0.3s ease;
+      }
+      /* 마우스를 올리면 overlay가 올라옴 */
+      .card:hover .overlay {
+        /* 올라오게 만듦 */
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="card">
+        <img
+          src="https://media.istockphoto.com/id/1458782106/ko/%EC%82%AC%EC%A7%84/jotunheimen-%EA%B5%AD%EB%A6%BD-%EA%B3%B5%EC%9B%90%EC%9D%98-%EC%88%B2%EA%B3%BC-%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%83%88-%EB%B8%94%EB%A3%A8-%EA%B0%95%EC%9D%B4%EC%9E%88%EB%8A%94-%EC%82%B0-%ED%92%8D%EA%B2%BD%EC%9D%98-%EA%B2%BD%EC%B9%98-%EC%A2%8B%EC%9D%80-%EA%B3%B5%EC%A4%91-%EC%A0%84%EB%A7%9D.jpg?s=612x612&w=0&k=20&c=OThMN5TseaKZ63J70nd7uxM8hXfugqHOE5CjC4tT-tE="
+          alt="Project 1"
+        />
+        <div class="overlay">
+          <h3>프로젝트 1</h3>
+          <p>간단한 설명입니다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://media.istockphoto.com/id/1458782106/ko/%EC%82%AC%EC%A7%84/jotunheimen-%EA%B5%AD%EB%A6%BD-%EA%B3%B5%EC%9B%90%EC%9D%98-%EC%88%B2%EA%B3%BC-%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%83%88-%EB%B8%94%EB%A3%A8-%EA%B0%95%EC%9D%B4%EC%9E%88%EB%8A%94-%EC%82%B0-%ED%92%8D%EA%B2%BD%EC%9D%98-%EA%B2%BD%EC%B9%98-%EC%A2%8B%EC%9D%80-%EA%B3%B5%EC%A4%91-%EC%A0%84%EB%A7%9D.jpg?s=612x612&w=0&k=20&c=OThMN5TseaKZ63J70nd7uxM8hXfugqHOE5CjC4tT-tE="
+          alt="Project 2"
+        />
+        <div class="overlay">
+          <h3>프로젝트 2</h3>
+          <p>반응형 웹사이트</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://media.istockphoto.com/id/1458782106/ko/%EC%82%AC%EC%A7%84/jotunheimen-%EA%B5%AD%EB%A6%BD-%EA%B3%B5%EC%9B%90%EC%9D%98-%EC%88%B2%EA%B3%BC-%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%83%88-%EB%B8%94%EB%A3%A8-%EA%B0%95%EC%9D%B4%EC%9E%88%EB%8A%94-%EC%82%B0-%ED%92%8D%EA%B2%BD%EC%9D%98-%EA%B2%BD%EC%B9%98-%EC%A2%8B%EC%9D%80-%EA%B3%B5%EC%A4%91-%EC%A0%84%EB%A7%9D.jpg?s=612x612&w=0&k=20&c=OThMN5TseaKZ63J70nd7uxM8hXfugqHOE5CjC4tT-tE="
+          alt="Project 3"
+        />
+        <div class="overlay">
+          <h3>프로젝트 3</h3>
+          <p>JavaScript 기반 앱</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
