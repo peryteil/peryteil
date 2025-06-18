@@ -1,0 +1,66 @@
+header , footer {
+    background-color: blue;
+    color:white;
+    /* text-align:left; */
+    /* 왼쪽 정렬(기본값) */
+    /* text-align:right; */
+    /* 오른쪽 정렬 */
+    text-align:center;
+    /* 가운데 정렬 */
+    /* text-align:justify; */
+    /* 양쪽 정렬(문장을 양끝에 맞춤) */
+    /* text-align:start; */
+    /* 글 방향에 따라 시작 시점 (왼쪽부터 또는 오른쪽부터) */
+    /* text-align:end; */
+    /* 글 방향에 따라 끝나는 시점. */
+}
+header {
+    height: 60px;
+}
+footer {
+    height: 40px;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+/* 전체 열을 감싸는 컨테이너 */
+section { 
+display: flex;
+gap: 20px;
+/* 플렉스 컨테이너로 만듦 */
+/* flex-direction: row; */
+/* 기본값(가로 정렬) */
+/* flex-direction:column; */
+/* 세로 정렬 */
+/* flex-direction: row-reverse; */
+/* 오른쪽 -> 왼쪽 */
+/* flex-direction:column-reverse; */
+/* 아래 -> 위 */
+/* justify-content: flex-start; */
+/* 왼쪽 정렬 (기본값) */
+/* justify-content:center; */
+/* 가운데 정렬 */
+/* justify-content: flex-end; */
+/* 오른쪽 정렬 */
+/* justify-content: space-between; */
+/* 양 끝 맞춤 + 사이 간격 */
+/* justify-content: space-around; */
+/* 양쪽 간격을 균등 배분 */
+/* justify-content:space-evenly; */
+/* 전체 간격을 균등 배분 */
+/* align-items:stretch; */
+/* 높이를 자동으로 채움(기본값) */
+/* align-items: flex-start; */
+/* 위쪽 정렬 */
+/* align-items: center; */
+/* 수직 가운데 정렬 */
+}
+.left {
+    width: 30%;
+    background-color: lightcoral;
+}
+.right {
+    width: 70%;
+    background-color:lightgoldenrodyellow;
+}

@@ -1,0 +1,32 @@
+body {
+    background-color:skyblue;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxAQEBAQEA8PDQ0NDw0PEA8PDw8NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFRAQGi0dHR0tLS0tKysrKy0tLS0tLS0tLSstLS0tLS0tLS0rLS0tKy0tLS0tLS0tLS0tLSsrLSstK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAMRAAAgIBAwMCBQMEAgMAAAAAAAECAxEEElETQWEhMQUUcYGhkbHwQmLh8RUiUpLB/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACIRAAIDAAICAwADAAAAAAAAAAABAhESAxMhUQQxQRRhcf/aAAwDAQACEQMRAD8A8ihiASLPrD5JhFpFJDMDJbLTLwUkEkMgHYXtCLwMLFYKcRuCbQCxW0raO2lbRj0BBF4CSCwAmwNpFEakXsAnQnaWkN2k2gGgNpTiNSL2iFoQohbByQcYAJzM3TK6Zr6ZewBdhlVQSrNCgGoCE+QzKBGh7iVsELRncSdM0OAOBD0IcAHAfJA7QLUhLiVtHqsjiIehJQ7aQA0Y8FpDFEvaUaaBURkYkSDSKIbB2l7QsBJATYKRe0NIvAydCnEm0ZgmACwNpW0ZgvABYraWkHtL2jCwEg0i0gkhEti3Em0dtBcQFoBIvaEohJCBsBINF7SJAS2XGIyUV2JFBxrJZN2SqJojQmXTDBoiZSkdfFBV5My0fqH8pjsaU8dyWWPHuZ6kbrjgkcrV1qP1MuDdqKW3n3Br0rfubJpI45Rbk6Rj6YfSN/R8Ga949AUrCUHFeTPJAYGNDKtNKXsvuNuiVb+jPtIdFaDyQjaNOqfo4iReC0g0jYpsHaWkGkWojIsFDEiKIaQEtgpF4CSLwMmxbRNo3aTaAtCsF7RuwmwA0L2lqIzaXtAWhe0vaMUS8AToWkXtGbS0hC0K2lqA1QL2CsWhWwiiOdb9PIdFWX6ibGrboGFSxn+JhqD9McYN0KfTBFRj1MnM61w/QhLj7hxix0IDenwZuR0QgKVRLIGjp4KlEjRtnwZo0ZQ10+g+ETRCrPuRKZpDjRy51Gaekyeg+VQu7SwxlN5BctCn8a/s40NLFeyG+iHWxx6GS9lp6MWlBeAuqv4iGRt8EKwY9zOTGIzaRRCSOo5WylEJQCQaQyHIBQLURmC8BZLkBsLUDRVVkfXSJySKjCUjCohbDpKjI2Om8EPlRovjyZyo1thdF8HWjphi064JfMWviM4brK2Has0q4M09N6+xS5UzOfx5xOdtCUTf8qXHSD7ER0TMKrZor0jN9dCXYfCszly+jo4/i+znOgqNR1fl+5ToI7Tb+NXkw9EkYY9jd0QHSLZfVQiI2KyHGkfCohyRrCDM/SGQhg0Klh/LmbmbR4zM0V0smyGm8DlT4Ic6NVxtmCunHuPhA0qrkJQRLlZcYUZ5R9PcxaiZ0LIY7mWyCCLFNHNnFiZ0tnTcOwqyJspnLLjOd8uQ1NkL0zLricBadjI6Z/xGmpo0wwbObRyx4YsxLRsOGn/jOlVAcoIjtZuvixObGnwEtKmdP5Ze5aqF2lfxl+mGOnSHQoRrjpw/l8EvkNFwV+CIUIaqxsaGGqnwZuRqof0IUAlA0RrYXSYtFYM/SyC9P4NcK2mP6eRbofWmcpUeAvl2dF0hwoDsEuE50dOOjpjatOMhXgh8hpHhRjjQU6ToSh6ASrJ2W+MwuoHoGtwDhEeicGRadDq6VwaY1ZH1wSIlM0jxmavTZHx0fJrrl4C7mLmzoXHEyqjHZY5yBbX6e35ybHSm/wDJXRQtDwcqdcuyKjp2zpuBTg+yK7COs506MGK2B2LamzLZp8FxmROBzpVme6J0LIYMl0DWLMJxObL3IaHBcENtHNk5DpXZ/qgo1vk0w0r49Q1oJ8GnYvZl0v0VVF/6NlVYurSyXujXCp9jKUkdMIP9QcYD6qFwVXU+DTBYMXI6FEKvTIN6VBQkHlGWmbZQpaZDFp0aK4ZG9NckubKUEYZaVE6B0FWgugg7A6jndEtUm7pFqsOwXWZY1chqhGqNQapIcy1xmCVOCKs6MqMgdFhsOsxOoB1m/pBx0uR7Drs5ioGxo8HSjSkFs8EvlGuI50dOx0dK+DZGI1RIfIzRcaMiowU6mbNjCUCdF4MUdMGtMa1EmBaY8IzrTpFTgh79PcRbME2waSMdrSObqLPU2aiRjlDJvA5puzLZHInpo39AF0o12YuBy5Uoo6XR8EH2EdRjpwa62uMmamKN1O3kzlI3jEZGEH2x+wx0JeyTGVwg+6DdePYz0bZMrr8FdE05Re0eiXBCI6cbHTGmhcj5Q4E5spcaMMasDoxLcQooGxUC62GpYGRClBMmyqFKQUYgSqwFBMYkNjEdFC4jPYzZoi9pewikWpCKJ0yOASbGKDFY6EqsLpD1ELArDIhUhKA0pisdAbCmi5MXKTGBHIU7USUW/CB6SH4J8i7LkZJNv6G1xS7CJotMhoyOr7lOJo6YSpHonJikhcm+yN8q19RM2l7IakJxMW18ENDsIPTFk43Tn9B1cZc/g2r/ALeA1WkR2F9aEQ3Lun+B3UePUa9oqTBSspxoFSZoqEJo0VJFNkpGitpBOwFuIt/QlDfgcvBEmDUaYQBugSsXFhuQbpJ0fItIeWKLSGdMuMGGgyStPgdsTCigkiGy1EGNaGKKJFBYFZVERaLwQQEKyU2A5AAeSmwCJABbBYWCmh2ADKaJL0FOYWIuQtotsXJDEy3JIVOxFuAqdY/AnZXUz6CLsl2RaRlnJlIzbD9SGffLyWWRYFetx2Qx6zPg5kImquPhfUzeTVaNSsGVpsybF4/+jtPa15FfjwOvPk1KrPuhsa8ciHdLPsaKr89idMvKGQl4NEIoXDD4GxwLRWS+khsIki0MTQtBkiTLaLUkTKFY6ARbeAi8ILCgFNjEUWFhQaYWRf3KcfIWFBymVvFuJW0LCg3JE3AbQshYUWVuBchbTfcLCh28qUxaj5CaFY6J/PYvb9AGTcGgyVJIHai9yBlYLQZJsQE4ASsx3Fy1C5DQZBtr5ZmnglupjyYr9ZHkuLZnJD+ouCHPd6IaUZWLjRgaoMyQ1fkNal8mFyOzCNKTDhFmVanyOhqkPTFhG+pjVHyYoahdjRC9eSHJl4RpSa8h5YqFsX3D3+SdjwMjqMcjI6gzuWf9C90k+ClIlxN8bW/AcbDFCWe41R8sNBk2K2PJfzMeTDKuPJNq4DSDLOlG5MLqI5sWvoMUvqGgybclSngRBsY0u4tBkGVwDubKc4kUchoMDIyb7oP7i1BILaGgyXnyDKxEaFyb7IWh5Klf4ET1uBk3z+xltgn2GpCySXxB+Rb1cnyA6/H4DhWitIWWHG+X0ClNv+r8AStUf6WA9Yv/ABRDZSiVNN93+wp6Zvv+4b1q4Fy1i8/kLkGUX8jnuC9AgXrVwC9b/a/1wK5jzEL5WJBXzHh/+xBXIKj6PGVaryaY6nyzzcdUxsNW+T1HwnLHnieljdn+obC/HH6nm4avyPhqyHws1XLFnpIawctZ5POQ1K5NFd8eTN8JalZ34a3Huy5fEPJxVan3RTWf8MS44/o3r8O1H4q+zHw+Jt+7R55xYPUkiumL+jJzmvs9TD4g+UPjrnyjyleukuy/Q0VfFH3iiJcD/ENcq/Werq1We/4NEbUeXr+LQ4a+g6PxaH9xhLin6OiMoez0qsT/AIh0Gjy//Jceoyv4rNemY/dkPjkXcT1UcBqKPO1fGX3im+VJmr/km16LH3Idx+wXE5fR1JRQPVUTlvWN9xcr2+6/JOjTof6dOWvgiR16fsmcdzfK/JTtfK+xVk9R2J69L3ES+Krg5Tk3/EVh+B+BdZ1X8TT4B+fi+y/Q5WX4Jvfj8B4DDOu9QmLezh/Zs5XW/tKepfH7iplUjq/9Vz98i5Shwcueqn5/IiV0gUX7E69HUslDwJeOxzJWMXKxlqP9kP8Aw6TtS9/T7Au9cr9DmOxgO1lYIOm9UQ5PVZB4QrZ4RSDUiEPbPCTGRmMjMhBM0jJjY2jI2kITRopMbG/yNhqXyQhNItckh0dZLkZHWMhCXFGnbL2GtUn7ot2oogsoe2/sKMhitj5IQmrLXhDNPqOW1+R0rE2sfchDKS8m3G7ibNJP1R6V6OMaY2TlhyxiK7J+37EIefzq2/8ADug2lFL9ZzrLo+RTvRCGcI+Dsn4Bd6B66IQ0UUYNk+ZK+ZIQeURplPUAvUFkDKCwXqAHqCEDKFbBepX8QL1KIQeULTFy1CFu9EINRRm2BK5AO5EIVRLYHWRZCBQrP//Z);
+    
+    
+    /* 요소 전체를 꽉 채움. 잘릴 수 있음 */
+    /* background-size: auto;  */
+    /* 기본값. 이미지 원래 크기로 표시됨 */
+    /* background-size: contain;  */
+    /* 요소 안에 이미지를 다 보이게 맞춤. 빈 공간이 생길 수 있음 */
+    /* background-size: 100px 200px;  */
+    /* 가로 100px, 세로 200px로 크기 지정 */
+    /* background-size: 50% 50%;  */
+    /* 요소의 가로·세로의 50% 크기로 이미지 크기 설정 */
+    /* background-size: inherit;  */
+    /* 부모 요소의 값을 물려받음 */
+    /* background-size: initial;  */
+    /* 기본값으로 초기화 */
+    /* background-size: unset;  */
+    /* 상속될 수 있으면 상속, 아니면 초기화 */
+}
+header {
+    background-image: linear-gradient(to bottom, red, yellow);
+    padding: 20px;
+    /* background-image: linear-gradient(45deg, red, yellow); 대각선 */
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 무지개 */
+    /* background-image: radial-gradient(circle, red, blue); 중심에서 퍼지는 원형 모양 */
+}
+   
+p {
+    color: black;
+}
