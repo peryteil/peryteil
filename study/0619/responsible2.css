@@ -1,0 +1,76 @@
+/* 기본 스타일 (모바일 우선) */
+body {
+    /* 전체 글꼴 지정 */
+  font-family: Arial, sans-serif;
+  /* 바깥 여백 제거 */
+  margin: 0;
+  /* 안쪽 여백 제거 */
+  padding: 0;
+}
+
+header {
+    /* 어두운 회색 배경 */
+  background-color: #333;
+  /* 흰색 글씨 */
+  color: white;
+  /* 내부 여백 */
+  padding: 10px;
+  /* 가운데 정렬 */
+  text-align: center;
+}
+
+.content {
+    /* 기본적으로 블록 레이아웃 (모바일에서 세로 배치) */
+    display: block;
+    /* 내부 여백 */
+    padding: 20px;
+}
+
+.left-column,
+.right-column {
+    /* 밝은 회색 배경 */
+    background-color: #f4f4f4;
+    /* 위아래 여백 */
+    margin: 10px 0;
+    /* 내부 여백 */
+    padding: 15px;
+}
+
+footer {
+    /* 어두운 회색 배경 */
+  background-color: #333;
+  /* 흰색 글씨 */
+  color: white;
+  /* 가운덷 정렬 */
+  text-align: center;
+  /* 내부 여백 */
+  padding: 10px;
+}
+
+/* 미디어 쿼리 - 화면 너비가 768px 이상일 때 적용 */
+@media screen and (min-width: 768px) {
+  .content {
+    /* 가로로 정렬 */
+   display: flex;
+   /* 좌우로 공간 배분 */
+   justify-content: space-between;
+  }
+
+  .left-column,
+  .right-column {
+    /* flex: 1; */
+    /* 각 열 너비를 48%로 설정 (2개 합쳐서 96%) */
+    width: 48%;
+
+  }
+}
+
+/* 미디어 쿼리 - 1024px 이상 */
+@media screen and (min-width: 1024px) {
+  .content {
+    /* 최대 너비 제한 (중앙 정렬을 위해) */
+    max-width: 1200px;
+    /* 좌우 가운데 정렬 */
+    margin: 0 auto;
+  }
+}

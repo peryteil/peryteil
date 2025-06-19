@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- HTML5 문서임을 선언 -->
+<html lang="ko">
+<!-- 문서의 언어를 한국어로 설정 -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 문자 인코딩을 UTF-8로 설정 (한글 등 다양한 문자를 표현 가능) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 모바일 화면을 장치 너비에 맞추고 초기 확대 수준을 1로 설정 -->
+    <title>Multimedia</title>
+    <!-- 웹페이지 제목(브라우저 탭에 표시됨) -->
+    <style>
+        /* 전체 화면에 비디오 배경을 깔기 위한 스타일 설정 */
+        .hero {
+            /* 안에 있는 텍스트 위치를 제어하기 위해 상대 위치 설정*/
+            position: relative;
+            /* 너비 100% */
+            width: 100%;
+            /* 화면 높이의 100%를 차지 */
+            height: 100vh;
+            /* 넘치는 내용 숨김 처리 */
+            overflow: hidden;
+        }
+
+        .hero video {
+            /* 화면에 꽉 차도록 절대 위치 지정 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* 비디오를 화면에 꽉 채우되 비율 유지 */
+            object-fit: cover;
+        }
+
+        .hero-text {
+            /* 부모(.hero)를 기준으로 중앙 배치 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* 텍스트 색상을 흰색으로 */
+            color: white;
+            /* 중앙 정렬 */
+            text-align: center;
+            /* 폰트 크기 */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 본문 제목, 비디오 위가 아닌 일반 페이지 상단에 텍스트로 보여짐 -->
+    <h1>Multimedia</h1>
+    <!-- 비디오 배경을 감싸는 컨테이너 -->
+    <div class="hero">
+        <!-- 비디오 자동 재생, 반복 재생, 음소거 설정 -->
+        <video autoplay loop muted>
+            <!-- 비디오 파일 경로 및 형식 지정 -->
+            <source src="https://videos.pexels.com/video-files/3009534/3009534-hd_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- 비디오 위에 덧씌워지는 텍스트 영역 -->
+    <div class="hero-text">
+        <!-- 화면 중앙에 표시되는 환영 문구 -->
+        <h1>Welcome to Multimedia</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- 이 문서가 HTML5 문서임을 선언 -->
+
+<html lang="en">
+<!-- 문서의 언어를 영어로 설정 -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 문자의 인코딩을 UTF-8로 설정 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 반응형 웹을 위한 뷰포트 설정 (모바일 기기에서도 잘 보이도록) -->
+
+    <title>나의 첫 웹 페이지</title>
+    <!-- 브라우저 탭에 표시될 문서 제목 -->
+
+    <style>
+        /* 전체 body를 Grid 레이아웃으로 구성 */
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh; /* 전체 화면 높이 */
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* header 영역 스타일 */
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* nav 영역 스타일 */
+        nav {
+            grid-area: nav;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        /* main 콘텐츠 영역 스타일 */
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        /* footer 영역 스타일 */
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* nav 안의 링크 스타일 */
+        a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 마우스를 올렸을 때 링크 밑줄 표시 */
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상단 header 영역: 로고 및 사이트 제목 포함 -->
+    <header>
+        <h1>나의 첫 웹페이지</h1>
+        <p>로고와 함께하는 멋진 웹사이트</p>
+    </header>
+
+    <!-- 왼쪽 내비게이션 메뉴 영역 -->
+    <nav>
+        <a href="#">홈</a>
+        <a href="#">소개</a>
+        <a href="#">문의</a>
+    </nav>
+
+    <!-- 중앙 콘텐츠 영역 -->
+    <main>
+        <article>
+            <!-- 블로그 글 제목 -->
+            <h2>첫 번째 블로그 글</h2>
+            <!-- 블로그 글 본문 -->
+            <p>이곳은 나의 첫 번째 블로그 글입니다.</p>
+        </article>
+    </main>
+
+    <!-- 하단 푸터 영역: 저작권 정보 포함 -->
+    <footer> &copy;2025 모든 권리 보유.</footer>
+</body>
+</html>
