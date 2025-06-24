@@ -30,7 +30,7 @@
 
 | 🔥 연속 커밋 | 📈 활동 통계 | 🗂️ 언어 사용량 |
 |--------------|--------------|----------------|
-| ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=peryteil&theme=radical) | ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=peryteil&show_icons=true&theme=radical) | ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=peryteil&layout=compact&theme=radical) |
+| ![GitHub Streak](https://streak-stats.demolab.com?user=peryteil&theme=radical) | ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=peryteil&show_icons=true&theme=radical) | ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=peryteil&layout=compact&theme=radical) |
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## ✉️ 연락처
 
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your.peryteil@gmail.com)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:peryteil@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=github&logoColor=white)](https://yourportfolio.com)
 
