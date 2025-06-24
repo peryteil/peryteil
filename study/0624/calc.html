@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 계산기 예제</title>
+</head>
+
+<body>
+    <script>
+        // 함수 계산기 함수
+
+        // 더하기 함수
+        function add(a, b) {
+            return a + b;
+        }
+
+        const add2 = function (a, b) {
+            return a + b;
+        }
+        // 빼기 함수 
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        const sub2 = function (a, b) {
+            return a - b;
+        }
+
+        // 곱하기 함수
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        const multiplication2 = function (a, b) {
+            return a * b;
+        }
+        // 나누기 함수
+        function division(a, b) {
+            return a / b;
+        }
+
+        const division2 = function (a, b) {
+            return a / b;
+        }
+        // 나머지 함수
+        function remainder(a, b) {
+            return a % b;
+        }
+
+        const remainder2 = function (a, b) {
+            return a % b;
+        }
+
+        // 사용자 입력 받기
+        const num1 = Number(prompt("첫 번째 숫자를 입력하세요."));
+        const operator = prompt("연산자를 입려가세요.");
+        const num2 = Number(prompt("두 번째 숫자를 입력하세요."));
+
+        // 연산자에 따라 함수 호출
+        let result = 0;
+        if (operator === "+") {
+            result = num1 + num2;
+        } else if (operator === "-") {
+            result = num1 - num2;
+        } else if (operator === "*") {
+            result = num1 * num2;
+        } else if (operator === "/") {
+            result = num1 / num2;
+        } else if (operator === "%") {
+            result = num1 % num2;
+        } else {
+            alert("올바른 연산자를 입력하세요.");
+        }
+
+        // 결과 출력
+        if (!(operator === "/" && num2 === 0) && ["+", "-", "*", "/", "%"].includes(operator)) {
+
+            alert(`결과: ${num1} ${operator} ${num2} = ${result}`);
+        }
+
+    </script>
+</body>
+
+</html>
