@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 예제</title>
+</head>
+
+<body>
+    <script>
+        // let fruits = ["사과", "바나나", "딸기"];
+        // console.log(fruits[0]);
+        // console.log(fruits.length);
+        // fruits.push("포도");
+        // console.log(fruits.length);
+
+        // fruits[fruits.length] = "키위";
+        // console.log(fruits.length);
+
+        // fruits[5] = "레몬";
+        // console.log(fruits.length);
+
+        // console.log(fruits);
+
+        // let items = ["여권", "칫솔", "수건"];
+
+        // items.push("충전기");
+        // items.splice(1, 1, "세면도구");
+
+        // console.log(items);
+
+        // // alert("여행 준비물 목록: " + items.join(","));
+
+        // console.log(items.pop());
+        // console.log(items);
+
+        // let animals = ["강아지", "고양이", "토끼"];
+        // animals.push("사자");
+        // // 연산으르 수행했다....
+        // for (let i = 0; i < animals.length; i++){
+        //     console.log(animals[i]);
+        // }
+
+        // for (let animal of animals){
+        //     console.log(animal);
+        // }
+
+        // animals.forEach(function (animal){
+        //     console.log(animal);
+        // })
+
+        // do-while 에제
+        // let i = 0;
+        // do {
+        //     console.log(i);
+        //     i++;
+        // } while (i < 5);
+
+        // // 1. 리터럴 방식(가장 많이 씀)
+        // let friits = ["사과","바나나","포도"];
+        // // 2. new Array()
+        // let fruits = new Array("사과","바나나","포도");
+        // // 3. 빈 배열 만들기
+        // let emptyArray = [];
+        // // 또는
+        // let emptyArray2 = new Array();
+
+        // // 4. Array.of() 사용
+        // let numbers = Array.of(1,2,3,4);
+        // console.log(numbers);
+
+        // // 5. Array.from() 사용
+        // let str = "hello";
+        // let arr = Array.from(str);
+        // console.log(arr);
+
+        // // 1. 배열 값 수정하기
+        // let fruits = ["사과", "바나나", "포도"];
+        // fruits[1] = "오렌지";
+        // console.log(fruits);
+        // // 2. 배열 값 추가힉
+        // // 뒤에 추가 (push())
+
+        // fruits.push("수박");
+        // console.log(fruits);
+
+        // // 앞에 추가 (unshift())
+        // fruits.unshift("딸기");
+        // console.log(fruits);
+
+        // // 3. 배열 값 삭제하기
+        // // 뒤에서 삭제 (pop())
+        // fruits.pop();
+        // console.log(fruits);
+
+        // 문제
+        // 정수 n이 매개변수로 주어집니다. n 줄에 걸쳐 별(*)을 한 줄에 하나씩 늘려서 출력하는 함수를 작성하세요.
+        // 출력 예시는 console.log 를 사용합니다.
+        // function printStars(n) {
+        //     for (let i = 1; i <= n; i++) {
+        //         console.log('*'.repeat(i));
+        //     }
+        // }
+        // printStars(5);
+
+        // function printRightStars(n) {
+        //     for (let i = 1; i <= n; i++) {
+        //         let space = ' '.repeat(n - i);  // 공백
+        //         let star = '*'.repeat(i);       // 별
+        //         console.log(space + star);
+        //     }
+        // }
+        // printRightStars(5);
+
+        // function printPyramid(n) {
+        //     for (let i = 1; i <= n; i++) {
+        //         const space = ' '.repeat(n - i);
+        //         const star = '*'.repeat(2 * i - 1);
+        //         console.log(space + star);
+        //     }
+        // }
+        // printPyramid(5);
+
+        // function pyramid(n) {
+        //     for (let i = 1; i <= n; i++) {
+        //         let line = '';
+
+        //         for (let j = 1; j <= n - i; j++) {
+        //             line += ' ';
+        //         }
+        //         for (let k = 1; k <= (2 * i -1); k++){
+        //             line += '*';
+        //         }
+        //         console.log(line);
+        //     }
+        // }
+        // pyramid(5);
+
+
+
+    </script>
+</body>
+
+</html>
