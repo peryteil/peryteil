@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid</title>
+</head>
+
+<body>
+    <script>
+        function pyramid(n) {
+            for (let i = n; i >= 1; i--) {
+                const stars = '*'.repeat(2 * i - 1);
+                console.log(stars.padStart(n + i - 1));
+            }
+        }
+        pyramid(5);
+
+        function printStair(n) {
+            for (let i = 0; i < n; i++) {
+                console.log('*'.padStart(i + 1));
+                // padStart(i + 1) -> 문자열의 총 길이를 (i + 1)로 만들고 부족한 만큼 앞에 공백 추가
+            }
+        }
+        printStair(4);
+
+        function printDiamond(n) {
+            for (let i = 1; i <= n; i++) {
+                const stars = '*'.repeat(2 * i - 1);
+                console.log(stars.padStart(n + i - 1));
+            }
+            for (let i = n - 1; i >= 1; i--) {
+                const stars = '*'.repeat(2 * i - 1);
+                console.log(stars.padStart(n + i - 1));
+            }
+        }
+        printDiamond(3);
+
+        function hollowDiamond(n) {
+            const drawLine = (i) => {
+                const spaces = ' '.repeat(n - i);
+                if (i === 1) return spaces + '*';
+                const inside = ' '.repeat(2 * i - 3);
+                return spaces + '*' + inside + '*';
+            };
+            for (let i = 1; i <= n; i++) {
+                console.log(drawLine(i));
+            }
+            for (let i = n - 1; i > 1; i--) {
+                console.log(drawLine(i));
+            }
+        }
+        hollowDiamond(5);
+
+        function printNumberPyramid(n) {
+            for (let i = 1; i <= n; i++) {
+                const left = Array.from({ length: i }, (_, k) => k + 1).join('');
+                const right = Array.from({ length: i - 1 }, (_, k) => i - k - 1).join('');
+                console.log((left + right).padStart(n + i - 1));
+            }
+        }
+        printNumberPyramid(5);
+    </script>
+</body>
+
+</html>
