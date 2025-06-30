@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printStair(n) {
+            for (let i = 0 ; i < n; i++) {
+                console.log(' '.repeat(i) + '*');
+            }
+        }
+        printStair(4);
+
+        function printStairs(n) { // n은 함수에 전달할 숫자(계단의 높이)
+            for (let i = 0; i < n; i++){
+
+
+            }
+        }
+        function printDiamond(n){
+            for (let i = 1; i <= n; i++){
+                const stars = '*'.repeat(2 * i - 1);
+                console.log(stars.padStart(n + i -1));
+
+                for (let i = n - 1; i >= 1; i--){
+                    const stars = "*".repeat(2 * i -1);
+                    console.log(stars.padStart(n + i -1));
+                }
+            }
+        }
+        printDiamond(3);
+
+        function printHollowDiamond(n){
+            const drawLine = (i)
+        }
+    </script>
+</body>
+</html>
