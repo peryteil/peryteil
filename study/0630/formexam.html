@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 회원가입 폼</title>
+</head>
+<body>
+<form id="signupForm">
+<input type="text" id="username" placeholder="이름 입력">
+<br>
+<input type="email" id="email" placeholder="이메일 입력">
+<br>
+<input type="password" id="password" placeholder="비밀번호 입력">
+<br>
+<input type="password" id="confirmPassword" placeholder="비밀번호 확인">
+<br>
+<button type="submit">가입</button>
+
+</form>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (e){
+            e.preventDefault();
+
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            // const previewEmail = document.getElementById()
+
+            if(!username) {
+                alert("이름을 입력하세요.")
+                return;
+            }
+
+            const emailRegex = /^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                alert("올바른 이메일을 입력하세요.");
+                return;
+            }
+            if(password.length < 8) {
+                alert("비밀번호는 8자 이상이어야 합니다.");
+                return;
+            }
+            if (password !== confirmPassword) {
+                alert("비밀번호가 일치하지 않습니다.")
+                return;
+            }
+
+            alert("회원가입 성공!");
+
+            
+        });
+    </script>
+
+    <div id="preview"
+    style="display: flex; flex-direction: column; gap: 10px;">
+        <p id="preview_name"></p>
+        <p id="preview_email"></p>
+        <p id="preview_password"></p>
+
+        <script>
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            
+            let preview_username = document.getElementById("preview_username").value;
+            let preview_email = document.getElementById("preview_email").value;
+            let preview_password = document.getElementById("preview_password").value;
+
+            function preview() {
+                preview_username.textContent = username;
+                preview_email.textContent = email;
+                preview_password.textContent = password;
+            }
+        </script>
+    </div>
+</body>
+</html>
