@@ -33,4 +33,13 @@
 ---
 
 ## 🧾 폴더 구조 (Structure)
-
+src/
+│
+├── components/ # 공통 UI 컴포넌트
+├── pages/ # 각 라우트 페이지
+├── hooks/ # 커스텀 훅
+├── services/ # Firebase 및 API 연동
+├── types/ # TypeScript 타입 정의
+├── utils/ # 유틸 함수 모음
+├── App.tsx # 메인 앱 컴포넌트
+└── main.tsx # 앱 진입점
