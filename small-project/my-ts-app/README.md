@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# 📸 Instagram Clone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> React + TypeScript + Firebase + Tailwind CSS 로 구현한 인스타그램 클론 프로젝트입니다.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠️ 사용 기술 (Tech Stack)
 
-### `npm start`
+- **React** - UI 개발
+- **TypeScript** - 타입 안정성 강화
+- **Tailwind CSS** - 유틸리티 기반 CSS 프레임워크
+- **Firebase**
+  - **Authentication** - 이메일/비밀번호 기반 로그인
+  - **Firestore** - 게시글, 댓글, 사용자 정보 저장
+  - **Storage** - 이미지 업로드
+- **React Router DOM** - SPA 라우팅 처리
+- **React Hook Form** - 입력 폼 관리
+- **Zustand** - 전역 상태 관리 (선택)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ 주요 기능 (Features)
 
-### `npm test`
+| 기능             | 설명 |
+|------------------|------|
+| 🔐 사용자 인증    | 회원가입, 로그인, 로그아웃 |
+| 📷 게시물 업로드 | 이미지 + 텍스트 게시글 등록 |
+| ❤️ 좋아요        | 게시글 좋아요 기능 |
+| 💬 댓글          | 게시글에 댓글 작성 및 표시 |
+| 🧑‍💼 프로필       | 내 게시물 보기, 프로필 사진 변경 |
+| 🕵️‍♀️ 팔로우 기능  | (선택 구현) 사용자 팔로우/언팔로우 |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧾 폴더 구조 (Structure)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
