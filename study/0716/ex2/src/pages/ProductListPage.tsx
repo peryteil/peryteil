@@ -1,0 +1,13 @@
+import ProductItem from "../components/ProductItem";
+import { products } from "../data/products";
+
+export default function ProductListPage() {
+    return (
+        <main className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2 lg:grid-cols-3">
+            {products.map((item)=>(
+                <ProductItem key={item.id} name={item.name} price={item.price}/>
+            ))}
+        </main>
+        
+    )
+}
