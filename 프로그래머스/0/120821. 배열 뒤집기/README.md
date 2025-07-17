@@ -1,6 +1,6 @@
 # [level 0] 배열 뒤집기 - 120821 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120821) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120821#) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 17일 10:14:02
+2025년 07월 17일 10:21:51
 
 ### 문제 설명
 
