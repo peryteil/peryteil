@@ -15,7 +15,6 @@
   - **Storage** - 이미지 업로드
 - **React Router DOM** - SPA 라우팅 처리
 - **React Hook Form** - 입력 폼 관리
-- **Zustand** - 전역 상태 관리 (선택)
 
 ---
 
