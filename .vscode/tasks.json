@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "small-project/coco-server",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - small-project/coco-server",
+			"detail": "tsc"
+		}
+	]
+}
