@@ -1,13 +1,15 @@
-import {useMemo} from 'react'
-import {DragDropContext} from 'react-beautiful-dnd'
-import {Title} from '../../components'
+import { useMemo } from 'react'
+import { DragDropContext } from 'react-beautiful-dnd'
+import { Title } from '../../components'
 import CreateListForm from './CreateListForm'
 import BoardList from '../BoardList'
 
-import {useLists} from '../../store/useLists'
+import { useLists } from '../../store/useLists'
 
 export default function Board() {
-  const {lists, onRemoveList, onCreateList, onMoveList, onDragEnd} = useLists()
+  const { lists, onRemoveList, onCreateList, onMoveList, onDragEnd } = useLists()
+
+  console.log(`lists : ${lists}`);
 
   const children = useMemo(
     () =>
@@ -16,7 +18,7 @@ export default function Board() {
           key={list.uuid}
           list={list}
           onRemoveList={onRemoveList(list.uuid)}
-          index={index}
+          index={lists.findIndex(l => l.uuid === list.uuid)}
           onMoveList={onMoveList}
         />
       )),

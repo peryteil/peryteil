@@ -7,7 +7,7 @@ import * as C from './cardEntities'
 
 export const rootReducer = combineReducers({
     listEntitles: L.reducer,
-    listdOrders:LO.reducer,
+    listidOrders: LO.reducer,
     listidCardidOrders: LC.reducer,
     cardEntitles: C.reducer
 })
