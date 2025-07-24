@@ -11,6 +11,6 @@ export default function App() {
       <DndProvider backend={HTML5Backend}>
         <Board />
       </DndProvider>
-    </ReduxProvider> 
+    </ReduxProvider>
   )
 }

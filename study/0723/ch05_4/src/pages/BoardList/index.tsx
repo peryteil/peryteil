@@ -28,7 +28,13 @@ const BoardList: FC<BoardListProps> = ({
   const children = useMemo(
     () =>
       cards.map((card, index) => (
-        <ListCard key={card.uuid} card={card} onRemove={onRemoveCard(card.uuid)} draggableId='card.uuid' index={index} />
+  <ListCard
+    key={card.uuid}
+    card={card}
+    onRemove={onRemoveCard(card.uuid)}
+    draggableId={card.uuid}
+    index={index}
+  />
       )),
     [cards, onRemoveCard]
   )
