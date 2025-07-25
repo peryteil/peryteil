@@ -1,4 +1,4 @@
-import type {DropResult} from 'react-beautiful-dnd'
+import type {DropResult} from '@hello-pangea/dnd'
 import {useCallback} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import type {AppState} from '../store'

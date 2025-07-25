@@ -1,12 +1,12 @@
 import type {FC, PropsWithChildren} from 'react'
-import {Droppable} from 'react-beautiful-dnd'
+import {Droppable} from '@hello-pangea/dnd'
 
 export type CardDroppableProps = {
   droppableId: string
 }
 export const CardDroppable: FC<PropsWithChildren<CardDroppableProps>> = ({
   droppableId,
-  children
+  children,
 }) => {
   return (
     <Droppable droppableId={droppableId}>

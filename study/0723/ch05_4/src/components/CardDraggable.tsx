@@ -1,28 +1,27 @@
-import type {FC, PropsWithChildren} from 'react'
-import {Draggable} from 'react-beautiful-dnd'
+import { FC, PropsWithChildren } from "react";
+import { Draggable } from "@hello-pangea/dnd";
 
 export type CardDraggableProps = {
-  draggableId: string
-  index: number
-}
+  draggableId: string;
+  index: number;
+};
 
 export const CardDraggable: FC<PropsWithChildren<CardDraggableProps>> = ({
+  children,
   draggableId,
   index,
-  children
 }) => {
   return (
     <Draggable draggableId={draggableId} index={index}>
-      {provided => {
-        return (
-          <div
-            ref={provided.innerRef}
-            {...provided.draggableProps}
-            {...provided.dragHandleProps}>
-            {children}
-          </div>
-        )
-      }}
+      {(provided) => (
+        <div
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+        >
+          {children}
+        </div>
+      )}
     </Draggable>
-  )
-}
+  );
+};

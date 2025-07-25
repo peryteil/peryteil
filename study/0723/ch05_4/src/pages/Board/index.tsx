@@ -1,6 +1,6 @@
 import {useMemo} from 'react'
-import {DragDropContext} from 'react-beautiful-dnd'
-import {Title} from '../../components'
+import {DragDropContext} from '@hello-pangea/dnd'
+import {ListDroppable, Title} from '../../components'
 import CreateListForm from './CreateListForm'
 import BoardList from '../BoardList'
 
@@ -26,10 +26,12 @@ export default function Board() {
     <section className="mt-4">
       <Title>Board</Title>
       <DragDropContext onDragEnd={onDragEnd}>
+        <ListDroppable className='flex flex-row p-2 mt-4'>
         <div className="flex flex-wrap p-2 mt-4">
           {children}
           <CreateListForm onCreateList={onCreateList} />
         </div>
+        </ListDroppable>
       </DragDropContext>
     </section>
   )

@@ -64,7 +64,7 @@ export const ListDraggable: FC<ListDraggableProps> = ({
     <div
       ref={ref}
       {...props}
-      className={[className, 'cursor-move'].join(' ')}
+      className={[className, "cursor-move"].join(" ")}
       style={{...style, opacity}}
       data-handler-id={handlerId}
     />
