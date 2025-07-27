@@ -1,22 +1,24 @@
-import type { ChangeEvent } from "react"
-import { useState, useCallback } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '../../contexts'
+import type {ChangeEvent} from 'react'
+import {useState, useCallback} from 'react'
+import {Link, useNavigate} from 'react-router-dom'
+import {useAuth} from '../../contexts'
 import * as D from '../../data'
 
 type SignUpFormType = Record<'email' | 'password' | 'confirmPassword', string>
-const initialFormState = { email: D.randomEmail(), password: '1', confirmPassword: '1' }
+const initialFormState = {email: D.randomEmail(), password: '1', confirmPassword: '1'}
 
 export default function SignUp() {
-  const [{ email, password, confirmPassword }, setForm] =
+  const [{email, password, confirmPassword}, setForm] =
     useState<SignUpFormType>(initialFormState)
   const changed = useCallback(
     (key: string) => (e: ChangeEvent<HTMLInputElement>) => {
-      setForm(obj => ({ ...obj, [key]: e.target.value }))
-    }, []
+      setForm(obj => ({...obj, [key]: e.target.value}))
+    },
+    []
   )
+
   const navigate = useNavigate()
-  const { signup } = useAuth()
+  const {signup} = useAuth()
   const createAccount = useCallback(() => {
     console.log(email, password, confirmPassword)
     if (password === confirmPassword) {
@@ -56,14 +58,14 @@ export default function SignUp() {
           <button
             type="submit"
             className="w-full btn btn-primary"
-            onClick={createAccount}
-          >
+            onClick={createAccount}>
             CREATE ACCOUNT
           </button>
         </div>
-        <div className="mt-6 text-grey-800">
-          Already haver an account?
-          <Link className="btn btn-link btn-primary" to="/login/">
+
+        <div className="mt-6 text-gray-800">
+          Already have an account?
+          <Link className="btn btn-link" to="/login/">
             LOG IN
           </Link>
         </div>
