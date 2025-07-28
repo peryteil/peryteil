@@ -1,5 +1,5 @@
 import type {FC, PropsWithChildren} from 'react'
-import {Draggable} from 'react-beautiful-dnd'
+import {Draggable} from '@hello-pangea/dnd'
 
 export type CardDraggableProps = {
   draggableId: string

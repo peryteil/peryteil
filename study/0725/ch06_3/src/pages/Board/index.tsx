@@ -1,5 +1,5 @@
 import {useMemo} from 'react'
-import {DragDropContext} from 'react-beautiful-dnd'
+import {DragDropContext} from '@hello-pangea/dnd'
 import {Title} from '../../components'
 import CreateListForm from './CreateListForm'
 import BoardList from '../BoardList'

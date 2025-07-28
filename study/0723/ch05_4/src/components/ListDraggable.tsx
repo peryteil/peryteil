@@ -31,7 +31,7 @@ export const ListDraggable: FC<ListDraggableProps> = ({
     accept: 'list',
     collect(monitor) {
       return {
-        handlerId: monitor.getHandlerId()
+        handlerId: monitor.getHandlerId(),
       }
     },
     hover(item: DragItem) {
