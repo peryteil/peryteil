@@ -1,0 +1,20 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es2018", // 또는 "es2020", "esnext"와 같은 최신 버전
+    "module": "commonjs", // Node.js 프로젝트에서 중요합니다.
+    "lib": ["es2018", "dom"], // 필요한 라이브러리를 추가하세요 (dom은 브라우저 환경 포함 시).
+    "strict": true, // 엄격한 타입 검사를 활성화합니다.
+    "esModuleInterop": true, // CommonJS/ES 모듈 간 상호 운용성을 허용합니다.
+    "skipLibCheck": true, // 선언 파일(`.d.ts`)의 타입 검사를 건너뜁니다.
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성을 강제합니다.
+    "outDir": "./dist" // 컴파일된 JS 파일이 저장될 디렉토리 (선택 사항)
+  },
+  "include": [
+    "src/**/*.ts" // TypeScript 파일의 위치를 지정합니다.
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
