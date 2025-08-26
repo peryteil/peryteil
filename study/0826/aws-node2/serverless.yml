@@ -1,0 +1,25 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: peryteil
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: aws-node2
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: aws-node2
+
+provider:
+  name: aws
+  region: ap-northeast-2
+  deploymentBucket:
+    name: tmd-genai1-students11
+    blockPublicAccess: true
+    serverSideEncryption: AES256
+  # Uncomment to easily set up a custom domain. Read the docs for more details:
+  # https://www.serverless.com/framework/docs/providers/aws/guide/domains
+  # domain: api.example.com
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
